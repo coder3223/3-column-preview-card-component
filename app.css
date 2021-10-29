@@ -1,0 +1,131 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 95%);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+.card-container {
+    width: 350px;
+    height: 550px;
+}
+
+.sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+
+.suv {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+.card-image {
+    margin: 50px 0 0 50px;
+}
+
+.card-title {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin: 50px 0 0 50px;
+}
+
+.card-text {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 25px 90px 0 50px;
+    line-height: 2;
+}
+
+.card-button {
+    font-size: 20px;
+    font-weight: 400;
+    border: 2.5px solid hsl(0, 0%, 95%);
+    border-radius: 25px;
+    padding: 12.5px 30px;
+    margin: 80px 0 0 50px;
+}
+
+#sedan-button {
+    color: hsl(31, 77%, 52%);
+}
+
+#sedan-button:hover {
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(31, 77%, 52%);
+    cursor: pointer;
+}
+
+#suv-button {
+    color: hsl(184, 100%, 22%);
+}
+
+#suv-button:hover {
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(184, 100%, 22%);
+    cursor: pointer;
+}
+
+#luxury-button {
+    color: hsl(179, 100%, 13%);
+}
+
+#luxury-button:hover {
+    color:hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(179, 100%, 13%);
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    main {
+        flex-direction: column;
+        height: 100%;
+        margin: 50px 0;
+    }
+
+    .card-container {
+        height: 500px;
+    }
+
+    .card-text {
+        margin: 25px 60px 0 60px;
+        line-height: 2;
+    }
+
+    .card-button {
+        margin: 30px 0 0 50px;
+    }
+
+    .sedan {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+    }
+
+    .suv {
+        background-color: hsl(184, 100%, 22%);
+    }
+
+    .luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+    }
+}
